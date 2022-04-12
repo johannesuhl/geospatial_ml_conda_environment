@@ -5,6 +5,6 @@ To avoid errors when importing GDAL, please add the following to the beginning o
 
  ```python
 import os
-os.environ['PROJ_LIB'] = r'C:\Python27_64_conda\envs\py38\Library\share\proj'
-os.environ['GDAL_DATA'] = r'C:\Python27_64_conda\envs\py38\Library\share'
+os.environ['PROJ_LIB'] = r'C:\<CONDA_INSTALLATION_DIR>\envs\py38\Library\share\proj'
+os.environ['GDAL_DATA'] = r'C:\<CONDA_INSTALLATION_DIR>\envs\py38\Library\share'
  ```
