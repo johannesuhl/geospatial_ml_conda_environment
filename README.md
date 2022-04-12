@@ -3,7 +3,7 @@ A windows batch file to automatically set up a clean conda environment, includin
 Note that the installation of PySAL seems to interfer with the environment variable PROJ_LIB set by the GDAL installation.
 To avoid errors when importing GDAL, please add the following to the beginning of your scripts that use GDAL, fiona, geopandas etc.
 
- ```
+ ```python
 import os
 os.environ['PROJ_LIB'] = r'C:\Python27_64_conda\envs\py38\Library\share\proj'
 os.environ['GDAL_DATA'] = r'C:\Python27_64_conda\envs\py38\Library\share'
